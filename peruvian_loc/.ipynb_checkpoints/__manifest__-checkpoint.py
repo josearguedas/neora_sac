@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Odoo Perú Localizaciones",
+    'name': "peruvian_loc",
 
     'summary': """
-        Odoo Perú Localizaciones""",
+        Short (1 phrase/line) summary of the module's purpose, used as
+        subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        Odoo Perú Localizaciones
+        Long description of module's purpose
     """,
 
-    'author': "Neora",
-    'website': "http://www.neora.com.pe",
+    'author': "My Company",
+    'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -19,15 +20,13 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'account','hr','hr_expense','purchase','sale'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/loc_views.xml',
-        'views/views.xml',        
-        'views/loc_reports.xml',
-        'views/registro_compras_views.xml',        
+        'views/views.xml',
+        'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
